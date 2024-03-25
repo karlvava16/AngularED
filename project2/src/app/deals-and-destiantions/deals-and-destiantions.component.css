@@ -1,0 +1,13 @@
+@import "../see-world/see-world.component.css";
+
+.item {
+  background-color: white;
+  width: 45%;
+  overflow: hidden;
+}
+
+.image {
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
