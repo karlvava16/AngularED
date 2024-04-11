@@ -1,0 +1,39 @@
+.textFunc {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.textFunc button
+{
+  margin-right: 3px;
+  margin-bottom: 3px;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.clicked {
+  background-color: aqua;
+}
+
+#AREA
+{
+  margin-left: 20px;
+  font-size: 20px;
+  resize: none;
+}
+
+.boldTextStyle
+{
+  font-weight: bold;
+}
+
+.italicTextStyle
+{
+  font-style: italic;
+}
+
+.underlineTextStyle
+{
+  text-decoration: underline;
+}

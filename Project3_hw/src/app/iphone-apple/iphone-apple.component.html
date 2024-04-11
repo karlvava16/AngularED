@@ -1,0 +1,11 @@
+<div class="image-cont">
+  <img *ngIf="currentImage" [src]="currentImage.pictureSrc" alt="image" />
+  <div class="other">
+    <div
+      *ngFor="let col of iphones"
+      class="color-block"
+      [style.background-color]="col.colorHex"
+      (click)="changeImage(col)"
+    ></div>
+  </div>
+</div>

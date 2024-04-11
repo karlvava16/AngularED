@@ -3,14 +3,16 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NewsComponent } from './news/news.component';
-import { FieldComponent } from './field/field.component';
+import { TextEditorComponent } from './text-editor/text-editor.component';
+import { BooksComponent } from './books/books.component';
+import { IphoneAppleComponent } from './iphone-apple/iphone-apple.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NewsComponent,
-    FieldComponent
+    TextEditorComponent,
+    BooksComponent,
+    IphoneAppleComponent
   ],
   imports: [
     BrowserModule,

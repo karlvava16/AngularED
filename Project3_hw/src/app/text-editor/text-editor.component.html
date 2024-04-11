@@ -1,0 +1,9 @@
+<div class="textFunc">
+  <button (click)="boldAction()" class="boldText" [ngClass]="{clicked: boldText}">B</button>
+  <button (click)="italicAction()" class="italicText" [ngClass]="{clicked: italicText}">I</button>
+  <button (click)="underlineAction()" class="underlineText" [ngClass]="{clicked: underlineText}">U</button>
+  <button (click)="switchTextCase() " [ngClass]="{clicked: caseTextActive}">Tt</button>
+</div>
+
+<textarea name="AREA" id="AREA" cols="30" rows="10" [ngClass]="{boldTextStyle: boldText, italicTextStyle: italicText, underlineTextStyle: underlineText}" [ngStyle]="getTextCase()"></textarea>
+ 
