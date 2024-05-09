@@ -1,78 +1,89 @@
-.container {
-  display: flex;
-  background-color: #f5f5f5;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.column {
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #343a40;
+}
+
+.books-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  max-width: 1200px;
+}
+
+.books-column-wrapper {
   flex: 1;
-  padding: 20px;
-}
-
-.books-column {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.sm_book {
-  cursor: pointer;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  /* Масштабирование фонового изображения для заполнения блока */
-  background-position: center;
-  /* Выравнивание фонового изображения по центру */
-  background-color: #fff;
-}
-
-.sm_book:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.img-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 16px;
-}
-
-.book-image {
-  max-width: 80%;
-  max-height: 450px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.book-image:hover {
-  transform: scale(1.05);
+  margin: 0 15px;
 }
 
 .details-column {
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
+.book-image-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.book-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
 .book-details {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  text-align: left;
 }
 
 .book-detail {
   margin-bottom: 10px;
-  font-size: 16px;
+  color: #555;
 }
 
 .detail-label {
   font-weight: bold;
   color: #333;
+}
+
+.books-list {
+  display: block;
+  justify-content: space-around;
+}
+
+.book-card {
+  width: 600px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.book-card p {
+  color: #666;
 }
